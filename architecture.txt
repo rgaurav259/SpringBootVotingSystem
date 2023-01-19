@@ -1,0 +1,25 @@
+Architecture and Design
+This application is built using the Spring framework, specifically the Spring Boot and Spring MVC modules. The application follows the Model-View-Controller (MVC) architectural pattern and uses RESTful web services to handle HTTP requests.
+
+Modules
+The application has the following modules:
+
+CandidateController: This is the main controller class that handles the RESTful endpoints for the voting portal. It uses a HashMap to store the candidates and their vote counts.
+
+Model: This module contains the data model for the candidates and their vote counts.
+
+View: This module contains the views that are returned to the client in response to HTTP requests.
+
+Exception: This module contains custom exceptions for invalid input handling.
+
+Data Storage
+The application currently uses a simple in-memory HashMap to store the candidates and their vote counts. This is not suitable for a production environment and a more robust database solution such as MySQL or MongoDB should be used.
+
+Security
+The application does not currently include any security features such as authentication or access control. In a production environment, appropriate measures should be taken to secure the application and protect against malicious attacks.
+
+Scalability
+The current implementation can handle a limited number of concurrent requests and may not scale well under heavy load. To improve scalability, load balancing and caching should be implemented.
+
+API documentation
+The API documentation is provided in the form of comments in the codebase, specifically in the controller class. In a production environment, a separate API documentation tool such as Swagger should be used.
